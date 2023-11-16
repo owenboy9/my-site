@@ -23,32 +23,84 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  opacity: 0.8;
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #fff;
   text-align: justify;
-  width: 90%;
+  width: 80%;
+  height: 90%;
+  margin-bottom: 3vh;
+  justify-content: space-between;
 }
 
-.content>h4 {
+h1 {
+  font-style: italic;
+}
+
+h2 {
+  font-style: italic;
+}
+
+h4 {
   text-align: left;
+  font-style: italic;
+}
+
+h3 {
+  font-style: italic;
+}
+
+.content>p {
+  max-width: 70%;
+  font-size: larger;
+  text-align: left;
+}
+
+body {
+  background-image: url("cloud.jpg");
+  background-size: cover;
+}
+
+header {
+  padding: none;
+  margin: none;
+  height: 30vh;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+}
+
+nav>a {
+  color: #fff;
+  text-decoration: none;
+  font-size: large;
+}
+
+.image-button {
+  height: fit-content;
+  margin-bottom: 20px;
 }
 
 main {
   display: flex;
   flex-direction: row;
-  background-image: url("cloud.jpg");
-  background-size: cover;
   padding: 10vh 4vw;
 }
 
 div>img {
-  width: 10vw;
+  width: 28vw;
+  opacity: 0.6;
 }
 
 #main {
@@ -70,35 +122,81 @@ div>img {
 }
 
 #four {
-  flex-grow: 30;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+#four>article {
+  width: 56vw;
+}
+
+#four>article>div>video {
+  width: 35vw;
+  position: sticky;
+  overflow: visible;
+  opacity: 0.6;
 }
 
 #aside {
-  background-image: url("faces.jpg");
+  background-image: url("./faces.jpg");
+  opacity: 0.6;
   background-size: cover;
   position: relative;
   width: 45vw;
-  border-radius: 12%;
   padding: 15vh;
+  margin-left: 3vw;
+  margin-right: 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-header {
+#aside>section {
+  height: 55%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   padding: none;
   margin: none;
-  height: 25vh;
 }
 
-header>h1 {
-  margin: none;
+#aside>section>:nth-child(2) {
+  margin-left: 5vw;
 }
 
-nav>a {
-  color: #fff;
-  text-decoration: none;
+#aside>:last-child {
+  margin-left: 10vw;
+}
+
+select {
+  background-color: transparent;
+  border: none;
+  font-size: larger;
 }
 
 footer {
-  height: 35vh;
+  padding: none;
+  margin: none;
+  height: 45vh;
+}
+
+footer>.video-container>.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 88%;
+}
+
+footer>.video-container>.content>.image-button {
+  align-self: flex-start;
+}
+
+footer>.video-container>.content>p {
+
+  text-align: right;
 }
 
 @media screen and (max-width: 800px) {
@@ -124,5 +222,4 @@ footer {
   #aside {
     width: 100%;
   }
-
 }
