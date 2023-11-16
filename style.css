@@ -39,10 +39,6 @@
   text-align: left;
 }
 
-.content>div>img {
-  height: 20vh;
-}
-
 main {
   display: flex;
   flex-direction: row;
@@ -51,35 +47,42 @@ main {
   padding: 10vh 4vw;
 }
 
+div>img {
+  width: 10vw;
+}
+
+#main {
+  width: 82%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-right: 3vw;
+}
+
+#main>section {
+  width: 28%;
+  padding: 4vh 4vw 0 0;
+}
+
+#one {
+  flex-grow: 15;
+}
+
+#four {
+  flex-grow: 30;
+}
+
 #aside {
   background-image: url("faces.jpg");
   background-size: cover;
   position: relative;
-  width: 75vw;
-}
-
-#one {
-  background-size: cover;
-  background-position: 50% 50%;
-}
-
-#two {
-  background-size: cover;
-  background-position: 50% 50%;
-}
-
-#three {
-  background-size: cover;
-  background-position: 50% 50%;
-}
-
-#four {
-  background-size: cover;
-  background-position: 50% 50%;
+  width: 45vw;
+  border-radius: 12%;
+  padding: 15vh;
 }
 
 header {
-  background-color: rgba(127, 255, 212, 0.952);
   padding: none;
   margin: none;
   height: 25vh;
@@ -94,13 +97,32 @@ nav>a {
   text-decoration: none;
 }
 
-button {
-  background-color: rgba(255, 192, 203, 0.3);
-  border-color: pink;
-  border-radius: 19%;
-  color: white;
-}
-
 footer {
   height: 35vh;
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    padding: none;
+    margin: none;
+  }
+
+  #main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: none;
+    margin: none;
+  }
+
+  #main>section {
+    width: 100%;
+  }
+
+  #aside {
+    width: 100%;
+  }
+
 }
