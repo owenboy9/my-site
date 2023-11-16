@@ -7,6 +7,7 @@
 * {
   box-sizing: border-box;
   font-size: 2vh;
+  color: #fff;
 }
 
 .video-container {
@@ -42,6 +43,41 @@
   height: 20vh;
 }
 
+main {
+  display: flex;
+  flex-direction: row;
+  background-image: url("cloud.jpg");
+  background-size: cover;
+  padding: 10vh 4vw;
+}
+
+#aside {
+  background-image: url("faces.jpg");
+  background-size: cover;
+  position: relative;
+  width: 75vw;
+}
+
+#one {
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+#two {
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+#three {
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+#four {
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
 header {
   background-color: rgba(127, 255, 212, 0.952);
   padding: none;
@@ -59,10 +95,10 @@ nav>a {
 }
 
 button {
-  background-color: transparent;
-  text-decoration: none;
-  border: none;
-  color: #fff;
+  background-color: rgba(255, 192, 203, 0.3);
+  border-color: pink;
+  border-radius: 19%;
+  color: white;
 }
 
 footer {
