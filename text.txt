@@ -1,0 +1,22 @@
+<div class="video-container">
+      <video autoplay muted loop id="video">
+        <source src="shaving brush weeds.mp4" type="video/mp4">
+      </video>
+
+      <div class="content">
+       <h2>cumulonimbus</h2>
+        <p>it is hard work to be persistent in documenting it, and it does take some balls to face and to consciously
+          unravel the
+          meanders of the process.</p>
+        <div>
+          <img src="./joyce.jpeg">
+        </div>
+        <p>emerging from the soil of past cycles, mutation actualizes, in the present embodiment, an incalculable
+          future. a
+          time-troubling event that collapses the reassuring—though entirely imaginary—linearity of life as a sequence.
+          picture
+          this as an experiment in writing a present invaded by the future folded back on it.</p>
+      <button>
+        <a href="#header">start</a>
+      </button>
+</div>
