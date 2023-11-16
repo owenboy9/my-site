@@ -3,3 +3,8 @@
 *::after {
   box-sizing: border-box;
 }
+
+* {
+  box-sizing: border-box;
+  font-size: 2vh;
+}
