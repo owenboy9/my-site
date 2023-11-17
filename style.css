@@ -70,7 +70,7 @@ h3 {
 }
 
 body {
-  background-image: url("cloud.jpg");
+  background-image: url("./cloud.jpeg");
   background-size: cover;
 }
 
@@ -175,7 +175,7 @@ div>img {
 }
 
 aside {
-  background-image: url("./faces.jpg");
+  background-image: url("./faces.jpeg");
   opacity: 0.6;
   background-size: cover;
   position: relative;
