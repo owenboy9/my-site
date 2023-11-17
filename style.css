@@ -12,16 +12,15 @@
 
 .video-container {
   position: relative;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
 
+
 #video {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   object-fit: cover;
   opacity: 0.8;
 }
@@ -38,6 +37,7 @@
   height: 90%;
   margin-bottom: 3vh;
   justify-content: space-between;
+  overflow: auto;
 }
 
 h1 {
@@ -58,7 +58,6 @@ h3 {
 }
 
 .content>p {
-  max-width: 70%;
   font-size: larger;
   text-align: left;
 }
@@ -66,7 +65,7 @@ h3 {
 #header>.video-container>.content>section {
   display: flex;
   flex-direction: column;
-  width: 30vw;
+  width: 50vw;
 }
 
 body {
@@ -215,7 +214,7 @@ select {
 footer {
   padding: none;
   margin: none;
-  height: 45vh;
+  height: 30vh;
 }
 
 footer>.video-container>.content {
@@ -233,12 +232,35 @@ footer>.video-container>.content>p {
   text-align: right;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
+  * {
+    font-size: small;
+  }
+
+  nav>a {
+    font-size: small;
+  }
+
+  select {
+    font-size: small;
+  }
+
   main {
     display: flex;
     flex-direction: column;
     padding: none;
     margin: none;
+  }
+
+  .content {
+    width: 90%;
+    max-width: none;
+    overflow: none;
+    overflow-wrap: normal;
+  }
+
+  .content>p {
+    font-size: small;
   }
 
   #main {
@@ -253,6 +275,10 @@ footer>.video-container>.content>p {
     width: 100%;
   }
 
+  #main>section>article>p {
+    color: rgb(95, 93, 93);
+  }
+
   #four {
     margin-top: 2vh;
   }
@@ -264,6 +290,10 @@ footer>.video-container>.content>p {
 
   aside>div>.image-button {
     display: none;
+  }
+
+  footer {
+    height: 35vh;
   }
 }
 
