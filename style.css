@@ -63,6 +63,12 @@ h3 {
   text-align: left;
 }
 
+#header>.video-container>.content>section {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+}
+
 body {
   background-image: url("cloud.jpg");
   background-size: cover;
@@ -121,25 +127,54 @@ div>img {
   flex-grow: 15;
 }
 
+#one>article>:last-child {
+  color: rgb(95, 93, 93);
+}
+
+#two>article>:nth-child(2) {
+  color: rgb(95, 93, 93);
+}
+
+#two>article>p {
+  color: black;
+}
+
+#three>article>:nth-child(2) {
+  color: rgb(95, 93, 93);
+}
+
+#three>article>p {
+  color: black;
+}
+
+#three {
+  margin-right: 1vw;
+}
+
 #four {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
+  margin-top: -39vh;
+}
+
+#four>article>:last-child {
+  color: rgb(95, 93, 93);
 }
 
 #four>article {
-  width: 56vw;
+  width: 50vw;
 }
 
-#four>article>div>video {
-  width: 35vw;
+#four>article>div>img {
+  width: 42vw;
   position: sticky;
   overflow: visible;
   opacity: 0.6;
 }
 
-#aside {
+aside {
   background-image: url("./faces.jpg");
   opacity: 0.6;
   background-size: cover;
@@ -153,7 +188,7 @@ div>img {
   justify-content: space-between;
 }
 
-#aside>section {
+aside>section {
   height: 55%;
   width: 100%;
   display: flex;
@@ -163,11 +198,11 @@ div>img {
   margin: none;
 }
 
-#aside>section>:nth-child(2) {
+aside>section>:nth-child(2) {
   margin-left: 5vw;
 }
 
-#aside>:last-child {
+aside>:last-child {
   margin-left: 10vw;
 }
 
@@ -195,7 +230,6 @@ footer>.video-container>.content>.image-button {
 }
 
 footer>.video-container>.content>p {
-
   text-align: right;
 }
 
@@ -219,7 +253,32 @@ footer>.video-container>.content>p {
     width: 100%;
   }
 
-  #aside {
-    width: 100%;
+  #four {
+    margin-top: 2vh;
+  }
+
+  aside {
+    padding: none;
+    width: 90%;
+  }
+
+  aside>div>.image-button {
+    display: none;
+  }
+}
+
+
+@media screen and (min-width: 800px) {
+
+  #one>.image-button {
+    display: none;
+  }
+
+  #three>.image-button {
+    display: none;
+  }
+
+  main>div>.image-button {
+    display: none;
   }
 }
