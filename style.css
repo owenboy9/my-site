@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Fredericka+the+Great&display=swap');
+
+
 *,
 *::before,
 *::after {
@@ -8,6 +11,7 @@
   box-sizing: border-box;
   font-size: 2vh;
   color: #fff;
+  font-family: 'Fredericka the Great';
 }
 
 .video-container {
@@ -38,24 +42,13 @@
   margin-bottom: 3vh;
   justify-content: space-between;
   overflow: auto;
-}
 
-h1 {
-  font-style: italic;
-}
-
-h2 {
-  font-style: italic;
 }
 
 h4 {
   text-align: left;
-  font-style: italic;
 }
 
-h3 {
-  font-style: italic;
-}
 
 .content>p {
   font-size: larger;
@@ -66,6 +59,10 @@ h3 {
   display: flex;
   flex-direction: column;
   width: 50vw;
+}
+
+.image-button {
+  font-family: 'Fredericka the Great';
 }
 
 body {
@@ -83,7 +80,7 @@ nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
+  font-family: 'Fredericka the Great';
 }
 
 nav>a {
