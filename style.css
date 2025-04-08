@@ -102,7 +102,7 @@ main {
 
 div>img {
   width: 28vw;
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 #main {
@@ -167,12 +167,12 @@ div>img {
   width: 42vw;
   position: sticky;
   overflow: visible;
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 aside {
   background-image: url("./faces.jpeg");
-  opacity: 0.6;
+  opacity: 0.5;
   background-size: cover;
   position: relative;
   width: 45vw;
